@@ -22,9 +22,9 @@ void [] Sort(int[] numbers, bool reverse = false)
 
   */
 
-  int x = 29 ; 
+  int x = 2 ; 
 
-  if (x >= 10 & x <= 30)
+  if (x >= 10 || x <= 30)
   {
     Console.WriteLine("+++");
   }
