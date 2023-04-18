@@ -22,9 +22,9 @@ void [] Sort(int[] numbers, bool reverse = false)
 
   */
 
-  int x = 20; 
+  int x = 29 ; 
 
-  if (x > 10)
+  if (x >= 10 & x <= 30)
   {
     Console.WriteLine("+++");
   }
@@ -32,3 +32,4 @@ void [] Sort(int[] numbers, bool reverse = false)
   {
     Console.WriteLine("---");
   }
+  
