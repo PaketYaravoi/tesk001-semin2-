@@ -8,13 +8,29 @@
 85→8
 */
 Console.Clear();
-int GetRandomInt()
+int GetRandomInt(int minValue, int maxValue )
 {
-    // int random = new Random().Next(10, 100);
-    // return random;
-    return new Random().Next(10, 100);
+    //int random = new Random().Next(minValue, maxValue + 1);
+    //return random;
+    return new Random().Next(minValue, maxValue + 1 );
 }
-Console.WriteLine(GetRandomInt());
-Console.WriteLine(GetRandomInt());
-Console.WriteLine(GetRandomInt());
-Console.WriteLine(GetRandomInt());
+
+int GetMaxTwoDigit(int number)
+{
+    int digit1 = number % 10;
+    int digit2 = number / 10;
+    int max = digit1;
+    if(digit2 > max)
+{
+        max = digit2;
+}
+return max;
+}
+
+
+int number = GetRandomInt(10, 99);
+Console.WriteLine(number);
+int maxDigit = GetMaxTwoDigit(number);
+Console.WriteLine(maxDigit);
+
+
